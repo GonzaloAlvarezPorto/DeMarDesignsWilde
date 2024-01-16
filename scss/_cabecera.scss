@@ -1,0 +1,28 @@
+.encabezado {
+    height: 90px;
+    @include niPaddingNiMargin(0, 0);
+
+    .encabezado__logo {
+        height: 100%;
+        @include niPaddingNiMargin(0, 0);
+
+        .logo__img {
+            width: 100%;
+            height: 100%;
+            @include niPaddingNiMargin(0, 0);
+        }
+    }
+
+    .encabezado__foto {
+        background-color: blue;
+        @include niPaddingNiMargin(0, 0);
+        height: 100%;
+
+        .foto__img {
+            @include niPaddingNiMargin(0, 0);
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}

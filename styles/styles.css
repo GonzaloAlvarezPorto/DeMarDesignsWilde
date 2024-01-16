@@ -1,0 +1,30 @@
+.encabezado {
+  height: 90px;
+  padding: 0;
+  margin: 0;
+}
+.encabezado .encabezado__logo {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.encabezado .encabezado__logo .logo__img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.encabezado .encabezado__foto {
+  background-color: blue;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.encabezado .encabezado__foto .foto__img {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

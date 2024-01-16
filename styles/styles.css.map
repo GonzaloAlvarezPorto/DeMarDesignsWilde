@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/_cabecera.scss","../scss/_mixins.scss"],"names":[],"mappings":"AAAA;EACI;ECAA,SDC2B;ECA3B;;ADEA;EACI;ECJJ,SDK+B;ECJ/B,QDIkC;;AAE9B;EACI;EACA;ECTR,SDUmC;ECTnC,QDSsC;;AAItC;EACI;ECfJ,SDgB+B;ECf/B,QDekC;EAC9B;;AAEA;ECnBJ,SDoBmC;ECnBnC,QDmBsC;EAC9B;EACA","file":"styles.css"}
