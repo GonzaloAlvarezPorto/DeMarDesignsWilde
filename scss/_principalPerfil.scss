@@ -1,0 +1,45 @@
+.principal {
+    @include niPaddingNiMargin(0, 0);
+    max-height: 520px;
+
+    .principal__cuerpo {
+        background-color: #171810;
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+
+        .cuerpo__logo {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            margin-top: 4rem;
+
+            .logo__imagen {
+                border: 1px solid white;
+                height: 150px;
+
+                &:hover{
+                    border: 1px solid $colorVerdeDeMar;
+                    transition: 1s;
+                }
+            }
+        }
+
+        .cuerpo__texto {
+            margin: 2rem;
+            width: 50%;
+
+            .cuerpo__parrafo {
+                color: grey;
+                font-style: italic;
+                font-family: Montserrat;
+
+                &:hover{
+                    color:white;
+                    transition: 1s;
+                }
+            }
+        }
+    }
+}

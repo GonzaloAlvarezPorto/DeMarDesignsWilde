@@ -1,28 +1,55 @@
-.encabezado {
-    height: 90px;
+header {
     @include niPaddingNiMargin(0, 0);
+    background-color: black;
+    height: 64px;
 
-    .encabezado__logo {
-        height: 100%;
-        @include niPaddingNiMargin(0, 0);
-
-        .logo__img {
-            width: 100%;
-            height: 100%;
-            @include niPaddingNiMargin(0, 0);
-        }
-    }
-
-    .encabezado__foto {
-        background-color: blue;
+    .encabezado {
         @include niPaddingNiMargin(0, 0);
         height: 100%;
 
-        .foto__img {
-            @include niPaddingNiMargin(0, 0);
-            width: 100%;
-            height: 100%;
+        .encabezado__abrir {
+            display: none;
         }
 
+        .encabezado__menu {
+            @include niPaddingNiMargin(0, 0);
+            height: 70%;
+            display: flex;
+            justify-content: end;
+
+            .menu__listado {
+                @include niPaddingNiMargin(0, 0);
+                display: flex;
+                justify-content: space-around;
+                height: 100%;
+                width: 50%;
+                list-style-type: none;
+                gap: 1rem;
+                text-align: center;
+
+                .listado__cerrar {
+                    display: none;
+                }
+
+                .listado__items {
+                    @include niPaddingNiMargin(0, 0);
+                    display: flex;
+
+                    .items__enlace {
+                        @include niPaddingNiMargin(0, 0);
+                        text-decoration: none;
+                        padding-top: 20px;
+                        font-size: 16px;
+                        width: 100%;
+                        color: white;
+
+                        &:hover {
+                            color: $colorVerdeDeMar;
+                            transition: 2s;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
