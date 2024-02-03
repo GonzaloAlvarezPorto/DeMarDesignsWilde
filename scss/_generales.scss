@@ -3,3 +3,8 @@
     font-family: Mukta;
     box-sizing:border-box;
 }
+
+html,body{
+    background-color: black;
+    @include niPaddingNiMargin(0, 0);
+}

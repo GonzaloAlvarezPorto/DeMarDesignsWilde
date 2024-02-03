@@ -1,39 +1,35 @@
 .principal {
-    @include niPaddingNiMargin(0, 0);
-    
-    .principal__cuerpo {
+
+    .principal__error {
         background-color: #171810;
         display: flex;
-        justify-content:start;
-        padding: 1rem;
+        justify-content: start;
+        flex-direction: row;
+        padding: 3rem;
         min-height: 560px;
-
-        .cuerpo__logo {
+        
+        .error__imagen {
             width: 50%;
             display: flex;
             justify-content: center;
-            padding: 2rem;
             flex-direction: column;
+            padding: 2rem;
             align-items: center;
 
-            .logo__imagen {
-                border: 1px solid white;
-
-                &:hover{
-                    border: 1px solid $colorVerdeDeMar;
-                    transition: 1s;
-                }
+            .imagen__archivo {
+                height: 150px;
             }
         }
 
-        .cuerpo__texto {
-            padding: 2rem;
+        .error__texto {
             width: 50%;
+            padding: 2rem;
             display: flex;
-            flex-direction: column;
             justify-content: center;
+            flex-direction: column;
             
-            .cuerpo__parrafo {
+
+            .texto__parrafo {
                 color: grey;
                 font-style: italic;
                 font-family: Montserrat;

@@ -1,7 +1,9 @@
 header {
     @include niPaddingNiMargin(0, 0);
     background-color: black;
-
+    position: sticky;
+    top:0;
+    
     .encabezado {
         @include niPaddingNiMargin(0, 0);
     
