@@ -1,31 +1,28 @@
 header {
     @include niPaddingNiMargin(0, 0);
     background-color: black;
-    height: 64px;
 
     .encabezado {
         @include niPaddingNiMargin(0, 0);
-        height: 100%;
-
+    
         .encabezado__abrir {
             display: none;
         }
 
         .encabezado__menu {
             @include niPaddingNiMargin(0, 0);
-            height: 70%;
             display: flex;
             justify-content: end;
 
             .menu__listado {
-                @include niPaddingNiMargin(0, 0);
                 display: flex;
                 justify-content: space-around;
-                height: 100%;
                 width: 50%;
                 list-style-type: none;
                 gap: 1rem;
                 text-align: center;
+                padding: 1rem;
+                margin: 0;
 
                 .listado__cerrar {
                     display: none;
@@ -38,7 +35,6 @@ header {
                     .items__enlace {
                         @include niPaddingNiMargin(0, 0);
                         text-decoration: none;
-                        padding-top: 20px;
                         font-size: 16px;
                         width: 100%;
                         color: white;

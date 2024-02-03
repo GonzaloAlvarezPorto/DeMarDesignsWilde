@@ -9,12 +9,10 @@ header {
   padding: 0;
   margin: 0;
   background-color: black;
-  height: 64px;
 }
 header .encabezado {
   padding: 0;
   margin: 0;
-  height: 100%;
 }
 header .encabezado .encabezado__abrir {
   display: none;
@@ -22,20 +20,18 @@ header .encabezado .encabezado__abrir {
 header .encabezado .encabezado__menu {
   padding: 0;
   margin: 0;
-  height: 70%;
   display: flex;
   justify-content: end;
 }
 header .encabezado .encabezado__menu .menu__listado {
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: space-around;
-  height: 100%;
   width: 50%;
   list-style-type: none;
   gap: 1rem;
   text-align: center;
+  padding: 1rem;
+  margin: 0;
 }
 header .encabezado .encabezado__menu .menu__listado .listado__cerrar {
   display: none;
@@ -49,7 +45,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   padding: 0;
   margin: 0;
   text-decoration: none;
-  padding-top: 20px;
   font-size: 16px;
   width: 100%;
   color: white;
@@ -67,13 +62,11 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   header .encabezado .encabezado__abrir {
     display: block;
     border: none;
-    padding-right: 17px;
-    padding-top: 1px;
     background-color: black;
-    width: 100px;
   }
   header .encabezado .encabezado__abrir .abrir__imagen {
-    height: 50%;
+    height: 60px;
+    padding: 1rem;
     border: none;
   }
   header .encabezado .encabezado__menu {
@@ -83,30 +76,31 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     background-color: black;
-    padding: 0.5rem;
+    margin-top: 0;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
   }
   header .encabezado .encabezado__menu .menu__listado {
     flex-direction: column;
-    align-items: start;
+    align-items: end;
+    padding: 0;
+    width: 100%;
   }
   header .encabezado .encabezado__menu .menu__listado .listado__cerrar {
     display: block;
     border: none;
     background-color: black;
-    width: 100px;
-    height: 64px;
   }
   header .encabezado .encabezado__menu .menu__listado .listado__cerrar .cerrar__imagen {
-    height: 32px;
+    height: 60px;
     border: none;
+    padding: 1rem;
   }
   header .encabezado .encabezado__menu .menu__listado .listado__items .items__enlace {
     font-size: 16px;
+    padding: 1rem;
   }
   header .encabezado .encabezado__menu.visible {
     opacity: 1;
@@ -116,11 +110,9 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal {
   padding: 0;
   margin: 0;
-  max-height: 520px;
 }
 .principal .principal__cuerpo {
   background-color: #171810;
-  min-height: 500px;
   display: flex;
   justify-content: center;
   padding: 3rem;
@@ -129,7 +121,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   width: 50%;
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  padding: 4rem;
 }
 .principal .principal__cuerpo .cuerpo__logo .logo__imagen {
   border: 1px solid white;
@@ -140,7 +132,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   transition: 1s;
 }
 .principal .principal__cuerpo .cuerpo__texto {
-  margin: 2rem;
+  padding: 2rem;
   width: 50%;
 }
 .principal .principal__cuerpo .cuerpo__texto .cuerpo__parrafo {
@@ -202,6 +194,47 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     width: 100%;
     font-size: 12px;
   }
+}
+.pieDePagina .pieDePagina__redes {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: rgb(48, 48, 48);
+}
+.pieDePagina .pieDePagina__redes .redes__contenedores {
+  margin: 0;
+  padding: 4px;
+}
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .enlace__imagen, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .instagram, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .whatsapp, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .linkedin, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .facebook {
+  height: 40px;
+  border: 1px solid rgb(48, 48, 48);
+  border-radius: 100px;
+}
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .enlace__imagen:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .instagram:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .whatsapp:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .linkedin:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .facebook:hover {
+  transition: 1s;
+}
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .facebook:hover {
+  border: 1px solid blue;
+}
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .linkedin:hover {
+  border: 1px solid rgb(73, 73, 247);
+}
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .whatsapp:hover {
+  border: 1px solid rgb(78, 161, 23);
+}
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .instagram:hover {
+  border: 1px solid rgb(192, 42, 160);
+}
+.pieDePagina .pieDePagina__derechos {
+  background-color: black;
+  margin: 0;
+  color: rgb(146, 146, 146);
+  text-align: center;
+  padding: 0.7rem;
+}
+.pieDePagina .pieDePagina__derechos:hover {
+  color: rgb(3, 250, 110);
+  transition: 1s;
 }
 
 /*# sourceMappingURL=styles.css.map */

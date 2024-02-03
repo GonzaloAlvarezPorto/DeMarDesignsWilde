@@ -1,10 +1,8 @@
 .principal {
     @include niPaddingNiMargin(0, 0);
-    max-height: 520px;
-
+    
     .principal__cuerpo {
         background-color: #171810;
-        min-height: 500px;
         display: flex;
         justify-content: center;
         padding: 3rem;
@@ -13,7 +11,7 @@
             width: 50%;
             display: flex;
             justify-content: center;
-            margin-top: 4rem;
+            padding: 4rem;
 
             .logo__imagen {
                 border: 1px solid white;
@@ -27,7 +25,7 @@
         }
 
         .cuerpo__texto {
-            margin: 2rem;
+            padding: 2rem;
             width: 50%;
 
             .cuerpo__parrafo {

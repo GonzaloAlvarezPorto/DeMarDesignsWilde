@@ -1,17 +1,3 @@
-@media (max-width:950px) {
-    .principal {
-        .principal__cuerpo {
-            .cuerpo__logo {
-                .logo__imagen {}
-            }
-        }
-
-        .cuerpo__texto {
-            .cuerpo__parrafo {}
-        }
-    }
-}
-
 @media (max-width:780px) {
     .principal {
         .principal__cuerpo {
@@ -19,16 +5,13 @@
 
             .cuerpo__logo {
                 margin-top: 2rem;
-                .logo__imagen {
-                }
+
             }
         }
 
         .cuerpo__texto {
             margin: 1rem;
-            .cuerpo__parrafo {
 
-            }
         }
     }
 }
