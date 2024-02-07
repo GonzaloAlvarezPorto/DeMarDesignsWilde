@@ -13,7 +13,7 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                min-height: 260px;
+                min-height: 250px;
                 visibility: visible;
                 margin: 0.5rem;
 
@@ -72,6 +72,16 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .principal {
+        .principal__habilidades {
+            .principal__solapa__habilidades {
+                min-height: 345px;
             }
         }
     }

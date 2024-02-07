@@ -441,7 +441,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 260px;
+    min-height: 250px;
     visibility: visible;
     margin: 0.5rem;
   }
@@ -486,6 +486,11 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
   .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
     width: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .principal .principal__habilidades .principal__solapa__habilidades {
+    min-height: 345px;
   }
 }
 .pieDePagina .pieDePagina__redes {
