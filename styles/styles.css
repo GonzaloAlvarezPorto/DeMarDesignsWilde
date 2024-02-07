@@ -337,8 +337,21 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  min-height: 500px;
 }
-.principal__habilidades .habilidades__contenedor {
+.principal__habilidades .principal__solapa__habilidades {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+.principal__habilidades .contenedor__habilidades__contenedor {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -348,12 +361,13 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   background-color: rgb(50, 50, 50);
   border-radius: 10px;
   width: 400px;
+  height: 200px;
 }
-.principal__habilidades .habilidades__contenedor:hover {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor:hover {
   background-color: rgb(85, 85, 85);
   transition: 2s;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__skills {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,28 +375,28 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   padding: 0.5rem;
   height: 200px;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__skills .contenedor__imagen {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
   width: 100px;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__skills .contenedor__texto {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 5px;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__skills .contenedor__texto .habilidades__texto {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto .habilidades__texto {
   color: white;
   align-items: center;
   margin: 0;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__nivel {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
   padding: 0.5rem;
   color: rgb(146, 146, 146);
   display: flex;
@@ -390,16 +404,16 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   justify-content: center;
   height: 200px;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__nivel .nivel__estado {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
   width: 120px;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__nivel .nivel__aclaracion {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -408,12 +422,72 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   color: white;
   width: 170px;
 }
-.principal__habilidades .habilidades__contenedor .contenedor__nivel .nivel__aclaracion .texto__aclaracion {
+.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion .texto__aclaracion {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
+@media (max-width: 900px) {
+  .principal .habilidades__solapa {
+    visibility: hidden;
+    height: 0;
+  }
+  .principal .principal__habilidades {
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+  }
+  .principal .principal__habilidades .principal__solapa__habilidades {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 260px;
+    visibility: visible;
+    margin: 0.5rem;
+  }
+  .principal .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .principal .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado {
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.7rem;
+    border: solid 1px rgb(138, 138, 138);
+    border-radius: 10px;
+    margin-bottom: 3px;
+  }
+  .principal .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado:hover {
+    background-color: rgb(85, 84, 84);
+  }
+  .principal .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado .principal__solapa__enlace {
+    text-decoration: none;
+    color: white;
+  }
+  .principal .principal__habilidades .contenedor__habilidades__contenedor {
+    flex-direction: row;
+    align-items: center;
+  }
+  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
+    height: 200px;
+    width: 176px;
+  }
+  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
+    height: 100px;
+  }
+  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
+    width: 50px;
+  }
+  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
+    height: 100px;
+  }
+  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
+    width: 50px;
+  }
+}
 .pieDePagina .pieDePagina__redes {
   display: flex;
   justify-content: center;

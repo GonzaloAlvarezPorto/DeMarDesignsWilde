@@ -1,0 +1,78 @@
+@media (max-width:900px) {
+    .principal {
+        .habilidades__solapa {
+            visibility: hidden;
+            height: 0;
+        }
+
+        .principal__habilidades {
+            justify-content: space-between;
+            border-top-left-radius: 10px;
+
+            .principal__solapa__habilidades {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                min-height: 260px;
+                visibility: visible;
+                margin: 0.5rem;
+
+                .principal__solapa__contenedor {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+                    padding: 0;
+
+                    .principal__solapa__listado {
+                        background-color: rgb(97, 97, 97);
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0.5rem 0.7rem;
+                        border: solid 1px rgb(138, 138, 138);
+                        border-radius: 10px;
+                        margin-bottom: 3px;
+
+                        &:hover {
+                            background-color: rgb(85, 84, 84);
+                        }
+
+                        .principal__solapa__enlace {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            .contenedor__habilidades__contenedor {
+                flex-direction: row;
+                align-items: center;
+
+                .habilidades__contenedor {
+                    height: 200px;
+                    width: 176px;
+
+                    .contenedor__skills {
+                        height: 100px;
+
+                        .contenedor__imagen {
+                            .habilidades__imagen {
+                                width: 50px;
+                            }
+                        }
+                    }
+
+                    .contenedor__nivel {
+                        height: 100px;
+
+                        .nivel__estado {
+                            .nivel__imagen {
+                                width: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
