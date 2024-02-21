@@ -9,6 +9,12 @@ html, body {
   background-color: black;
   padding: 0;
   margin: 0;
+  min-height: 700px;
+}
+
+.principal {
+  padding: 0;
+  margin: 0;
 }
 
 header {
@@ -115,21 +121,14 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     visibility: visible;
   }
 }
-.principal {
-  padding: 0;
-  margin: 0;
-  background-color: #171810;
-  padding-bottom: 2rem;
-  min-height: 480px;
-}
-.principal .principal__cuerpo {
+.principal__cuerpo {
   background-color: #171810;
   display: flex;
   justify-content: start;
   padding: 2rem 1rem 0 1rem;
   min-height: 440px;
 }
-.principal .principal__cuerpo .cuerpo__logo {
+.principal__cuerpo .cuerpo__logo {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -137,26 +136,26 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   flex-direction: column;
   align-items: center;
 }
-.principal .principal__cuerpo .cuerpo__logo .logo__imagen {
+.principal__cuerpo .cuerpo__logo .logo__imagen {
   border: 1px solid white;
 }
-.principal .principal__cuerpo .cuerpo__logo .logo__imagen:hover {
+.principal__cuerpo .cuerpo__logo .logo__imagen:hover {
   border: 1px solid rgb(3, 250, 110);
   transition: 1s;
 }
-.principal .principal__cuerpo .cuerpo__texto {
+.principal__cuerpo .cuerpo__texto {
   padding: 2rem;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.principal .principal__cuerpo .cuerpo__texto .cuerpo__parrafo {
+.principal__cuerpo .cuerpo__texto .cuerpo__parrafo {
   color: grey;
   font-style: italic;
   font-family: Montserrat;
 }
-.principal .principal__cuerpo .cuerpo__texto .cuerpo__parrafo:hover {
+.principal__cuerpo .cuerpo__texto .cuerpo__parrafo:hover {
   color: white;
   transition: 1s;
 }
@@ -239,7 +238,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__error .error__texto .texto__parrafo {
   color: grey;
   font-style: italic;
-  font-family: Montserrat;
 }
 .principal__error .error__texto .texto__parrafo:hover {
   color: white;
@@ -296,78 +294,85 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     font-size: 12px;
   }
 }
-.habilidades__solapa {
+.principal__cuerpoHabilidades {
+  background-color: #171810;
+  padding-bottom: 2rem;
+}
+.principal__cuerpoHabilidades .habilidades__solapa {
   display: flex;
   flex-direction: row;
   margin: 0 3rem 0 3rem;
   padding-top: 2rem;
 }
-.habilidades__solapa .solapa__contenedor {
+.principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor {
   display: flex;
   flex-direction: row;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  width: 100%;
 }
-.habilidades__solapa .solapa__contenedor .solapa__listado {
-  background-color: rgb(97, 97, 97);
+.principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor .solapa__listado {
+  background-color: #363636;
   display: flex;
   flex-direction: row;
   padding: 0.5rem 0.7rem;
-  border: solid 1px rgb(138, 138, 138);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin-right: 3px;
+  width: 20%;
+  align-items: center;
 }
-.habilidades__solapa .solapa__contenedor .solapa__listado:hover {
-  background-color: rgb(85, 84, 84);
+.principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor .solapa__listado:hover {
+  background-color: rgb(83, 83, 83);
+  border-color: rgb(3, 250, 110);
+  transition: 2s;
 }
-.habilidades__solapa .solapa__contenedor .solapa__listado .solapa__enlace {
+.principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor .solapa__listado .solapa__enlace {
   text-decoration: none;
   color: white;
 }
-
-.principal__habilidades {
-  background-color: #676864;
+.principal__cuerpoHabilidades .principal__habilidades {
+  background-color: #363636;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 3rem 0 3rem;
   padding: 1rem;
-  border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   min-height: 500px;
 }
-.principal__habilidades .principal__solapa__habilidades {
+.principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades {
   visibility: hidden;
   height: 0;
   width: 0;
 }
-.principal__habilidades .contenedor__habilidades__contenedor {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor {
   display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
   display: flex;
+  border: solid 1px rgb(20, 20, 20);
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 0.5rem;
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(83, 83, 83);
   border-radius: 10px;
   width: 400px;
   height: 200px;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor:hover {
-  background-color: rgb(85, 85, 85);
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor:hover {
+  background-color: #7c7c7c;
   transition: 2s;
+  border-color: rgb(3, 250, 110);
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -375,28 +380,28 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   padding: 0.5rem;
   height: 200px;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
   width: 100px;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 5px;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto .habilidades__texto {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto .habilidades__texto {
   color: white;
   align-items: center;
   margin: 0;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
   padding: 0.5rem;
   color: rgb(146, 146, 146);
   display: flex;
@@ -404,16 +409,16 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   justify-content: center;
   height: 200px;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
   width: 120px;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -422,22 +427,22 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   color: white;
   width: 170px;
 }
-.principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion .texto__aclaracion {
+.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion .texto__aclaracion {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
 @media (max-width: 900px) {
-  .principal .habilidades__solapa {
+  .principal__cuerpoHabilidades .habilidades__solapa {
     visibility: hidden;
     height: 0;
   }
-  .principal .principal__habilidades {
+  .principal__cuerpoHabilidades .principal__habilidades {
     justify-content: space-between;
     border-top-left-radius: 10px;
   }
-  .principal .principal__habilidades .principal__solapa__habilidades {
+  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -445,14 +450,14 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     visibility: visible;
     margin: 0.5rem;
   }
-  .principal .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor {
+  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
-  .principal .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado {
-    background-color: rgb(97, 97, 97);
+  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado {
+    background-color: rgb(83, 83, 83);
     display: flex;
     flex-direction: column;
     padding: 0.5rem 0.7rem;
@@ -460,44 +465,175 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     border-radius: 10px;
     margin-bottom: 3px;
   }
-  .principal .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado:hover {
-    background-color: rgb(85, 84, 84);
+  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado:hover {
+    background-color: #7c7c7c;
   }
-  .principal .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado .principal__solapa__enlace {
+  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado .principal__solapa__enlace {
     text-decoration: none;
     color: white;
   }
-  .principal .principal__habilidades .contenedor__habilidades__contenedor {
+  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor {
     flex-direction: row;
     align-items: center;
   }
-  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
+  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
     height: 200px;
     width: 176px;
   }
-  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
+  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
     height: 100px;
   }
-  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
+  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
     width: 50px;
   }
-  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
+  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
     height: 100px;
   }
-  .principal .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
+  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
     width: 50px;
   }
 }
 @media (max-width: 400px) {
-  .principal .principal__habilidades .principal__solapa__habilidades {
+  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades {
     min-height: 345px;
+  }
+}
+.principal__servicios {
+  display: flex;
+  flex-direction: column;
+  color: rgb(201, 201, 201);
+  background-color: #171810;
+  padding-bottom: 2rem;
+}
+.principal__servicios .servicios__apartado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem;
+  align-items: start;
+  background-color: #363636;
+  margin: 2rem 3rem 0 3rem;
+  border-radius: 10px;
+}
+.principal__servicios .servicios__apartado .apartado__titulo {
+  margin: 0 32px 0 0;
+  padding: 1rem;
+  width: 20%;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo {
+  background-color: rgb(83, 83, 83);
+  display: flex;
+  flex-direction: column;
+  border: solid 1px rgb(20, 20, 20);
+  border-radius: 10px;
+  width: 80%;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo:hover {
+  border-color: rgb(3, 250, 110);
+  transition: 2s;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__descripcion {
+  padding: 0 2.8rem;
+  margin: 1rem 0 0 0;
+  color: white;
+  font-family: Montserrat;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  margin: 0;
+  justify-content: center;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera {
+  width: 100%;
+  display: flex;
+  padding: 0.8rem;
+  border: solid 1px rgb(20, 20, 20);
+  border-radius: 10px;
+  margin: 2px;
+  background-color: #7c7c7c;
+  align-items: center;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera:hover {
+  border-color: rgb(3, 250, 110);
+  background-color: #979797;
+  transition: 2s;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__titulo {
+  font-weight: bold;
+  color: black;
+  width: 20%;
+  margin-right: 10px;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__parrafo {
+  width: 80%;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 2rem;
+  margin: 0;
+  justify-content: space-between;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado .bloqueDescriptivo__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  border: solid 1px rgb(20, 20, 20);
+  border-radius: 10px;
+  margin: 2px;
+  background-color: #7c7c7c;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado .bloqueDescriptivo__item:hover {
+  border-color: rgb(3, 250, 110);
+  background-color: #979797;
+  transition: 2s;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado .bloqueDescriptivo__item .item__titulo {
+  color: whitesmoke;
+  text-decoration: underline #979797;
+}
+.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado .bloqueDescriptivo__item .item__texto {
+  margin: 0;
+  color: white;
+  font-family: Montserrat;
+}
+
+@media (max-width: 1200px) {
+  .principal__servicios .servicios__apartado {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  .principal__servicios .servicios__apartado .apartado__titulo {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo {
+    width: 100%;
+  }
+  .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado {
+    flex-direction: column;
+  }
+  .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera {
+    flex-direction: column;
+  }
+  .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__titulo {
+    width: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__parrafo {
+    width: auto;
   }
 }
 .pieDePagina .pieDePagina__redes {
   display: flex;
   justify-content: center;
   padding: 0.5rem;
-  background-color: rgb(48, 48, 48);
+  background-color: #363636;
 }
 .pieDePagina .pieDePagina__redes .redes__contenedores {
   margin: 0;

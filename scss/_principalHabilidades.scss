@@ -1,145 +1,153 @@
-.habilidades__solapa {
-    display: flex;
-    flex-direction: row;
-    margin: 0 3rem 0 3rem;
-    padding-top: 2rem;
-
-    .solapa__contenedor {
+.principal__cuerpoHabilidades {
+    background-color: $colorFondoPrincipal;
+    padding-bottom: 2rem;
+    
+    .habilidades__solapa {
         display: flex;
         flex-direction: row;
-        margin: 0;
-        padding: 0;
+        margin: 0 3rem 0 3rem;
+        padding-top: 2rem;
 
-        .solapa__listado {
-            background-color: rgb(97, 97, 97);
+        .solapa__contenedor {
             display: flex;
             flex-direction: row;
-            padding: 0.5rem 0.7rem;
-            border: solid 1px rgb(138, 138, 138);
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            margin-right: 3px;
+            @include niPaddingNiMargin(0,0);
+            width: 100%;
 
-            &:hover {
-                background-color: rgb(85, 84, 84);
-            }
+            .solapa__listado {
+                background-color: $colorFondoSeccion;
+                display: flex;
+                flex-direction: row;
+                padding: 0.5rem 0.7rem;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                width: 20%;
+                align-items: center;
 
-            .solapa__enlace {
-                text-decoration: none;
-                color: white;
+                &:hover {
+                    background-color: $colorFondoMiniSeccion;
+                    border-color: $colorVerdeDeMar;
+                    transition: 2s;
+                }
+
+                .solapa__enlace {
+                    text-decoration: none;
+                    color: white;
+                }
             }
         }
     }
-}
 
-.principal__habilidades {
-    background-color: #676864;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 3rem 0 3rem;
-    padding: 1rem;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    min-height: 500px;
-
-    .principal__solapa__habilidades {
-        visibility: hidden;
-        height: 0;
-        width: 0;
-    }
-
-    .contenedor__habilidades__contenedor {
+    .principal__habilidades {
+        background-color: $colorFondoSeccion;
         display: flex;
-        flex-direction: row;
-        width: 100%;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 3rem 0 3rem;
+        padding: 1rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        min-height: 500px;
 
-        .habilidades__contenedor {
+        .principal__solapa__habilidades {
+            visibility: hidden;
+            height: 0;
+            width: 0;
+        }
+
+        .contenedor__habilidades__contenedor {
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            width: 100%;
             flex-wrap: wrap;
-            margin: 0.5rem;
-            background-color: rgb(50, 50, 50);
-            border-radius: 10px;
-            width: 400px;
-            height: 200px;
+            justify-content: center;
 
-            &:hover {
-                background-color: rgb(85, 85, 85);
-                transition: 2s;
-            }
-
-            .contenedor__skills {
+            .habilidades__contenedor {
                 display: flex;
-                flex-direction: column;
+                border: solid 1px rgb(20, 20, 20);
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                padding: 0.5rem;
+                flex-wrap: wrap;
+                margin: 0.5rem;
+                background-color: $colorFondoMiniSeccion;
+                border-radius: 10px;
+                width: 400px;
                 height: 200px;
 
-                .contenedor__imagen {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 5px;
-
-                    .habilidades__imagen {
-                        width: 100px;
-                    }
+                &:hover {
+                    background-color: $colorFondoMiniMiniSeccion;
+                    transition: 2s;
+                    border-color: $colorVerdeDeMar;
                 }
 
-                .contenedor__texto {
+                .contenedor__skills {
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
                     justify-content: center;
-                    padding: 5px;
+                    align-items: center;
+                    padding: 0.5rem;
+                    height: 200px;
 
-                    .habilidades__texto {
-                        color: white;
+                    .contenedor__imagen {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
                         align-items: center;
-                        margin: 0;
+                        padding: 5px;
+
+                        .habilidades__imagen {
+                            width: 100px;
+                        }
                     }
-                }
-            }
 
-            .contenedor__nivel {
-                padding: 0.5rem;
-                color: rgb(146, 146, 146);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                height: 200px;
+                    .contenedor__texto {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        padding: 5px;
 
-                .nivel__estado {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .nivel__imagen {
-                        width: 120px;
+                        .habilidades__texto {
+                            color: white;
+                            align-items: center;
+                            margin: 0;
+                        }
                     }
                 }
 
-                .nivel__aclaracion {
+                .contenedor__nivel {
+                    padding: 0.5rem;
+                    color: rgb(146, 146, 146);
                     display: flex;
-                    justify-content: center;
                     flex-direction: column;
-                    padding: 5px;
-                    padding-top: 0;
-                    color: white;
-                    width: 170px;
+                    justify-content: center;
+                    height: 200px;
 
-                    .texto__aclaracion {
-                        @include niPaddingNiMargin(0, 0);
-                        text-align: center;
+                    .nivel__estado {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .nivel__imagen {
+                            width: 120px;
+                        }
+                    }
+
+                    .nivel__aclaracion {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 5px;
+                        padding-top: 0;
+                        color: white;
+                        width: 170px;
+
+                        .texto__aclaracion {
+                            @include niPaddingNiMargin(0, 0);
+                            text-align: center;
+                        }
                     }
                 }
             }

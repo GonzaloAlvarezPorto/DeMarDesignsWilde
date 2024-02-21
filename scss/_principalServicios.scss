@@ -1,0 +1,118 @@
+.principal__servicios {
+    display: flex;
+    flex-direction: column;
+    color: rgb(201, 201, 201);
+    background-color: $colorFondoPrincipal;
+    padding-bottom: 2rem;
+
+    .servicios__apartado {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2rem;
+        align-items: start;
+        background-color: $colorFondoSeccion;
+        margin: 2rem 3rem 0 3rem;
+        border-radius: 10px;
+
+        .apartado__titulo {
+            margin: 0 32px 0 0;
+            padding: 1rem;
+            width: 20%;
+        }
+
+        .apartado__bloqueDescriptivo {
+            background-color: $colorFondoMiniSeccion;
+            display: flex;
+            flex-direction: column;
+            border: solid 1px rgb(20, 20, 20);
+            border-radius: 10px;
+            width: 80%;
+
+            &:hover {
+                border-color: $colorVerdeDeMar;
+                transition: 2s;
+            }
+
+            .bloqueDescriptivo__descripcion {
+                padding: 0 2.8rem;
+                margin: 1rem 0 0 0;
+                color: white;
+                font-family: $textoEnElPrincipal;
+            }
+
+            .bloqueDescriptivo__listadoCabecera {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 1rem 2rem;
+                margin: 0;
+                justify-content: center;
+                
+                .bloqueDescriptivo__itemCabecera {
+                    width: 100%;
+                    display: flex;
+                    padding: 0.8rem;
+                    border: solid 1px rgb(20, 20, 20);
+                    border-radius: 10px;
+                    margin: 2px;
+                    background-color: $colorFondoMiniMiniSeccion;
+                    align-items: center;
+
+                    &:hover {
+                        border-color: $colorVerdeDeMar;
+                        background-color: $colorFondoMiniMiniMiniSeccion;
+                        transition: 2s;
+                    }
+                    
+                    .itemCabecera__titulo{
+                        font-weight: bold;
+                        color: black;
+                        width: 20%;
+                        margin-right: 10px;
+                    }
+
+                    .itemCabecera__parrafo{
+                        width: 80%;
+                    }
+
+                }
+            }
+
+            .bloqueDescriptivo__listado {
+                display: flex;
+                flex-direction: row;
+                padding: 1rem 2rem;
+                margin: 0;
+                justify-content: space-between;
+
+                .bloqueDescriptivo__item {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0.8rem;
+                    border: solid 1px rgb(20, 20, 20);
+                    border-radius: 10px;
+                    margin: 2px;
+                    background-color: $colorFondoMiniMiniSeccion;
+                    
+                    &:hover {
+                        border-color: $colorVerdeDeMar;
+                        background-color: $colorFondoMiniMiniMiniSeccion;
+                        transition: 2s;
+                    }
+                    
+                    .item__titulo {
+                        color: whitesmoke;
+                        text-decoration: underline $colorFondoMiniMiniMiniSeccion;
+                    }
+                    
+                    .item__texto {
+                        margin: 0;
+                        color: white;
+                        font-family: $textoEnElPrincipal;
+                    }
+                }
+            }
+        }
+    }
+}

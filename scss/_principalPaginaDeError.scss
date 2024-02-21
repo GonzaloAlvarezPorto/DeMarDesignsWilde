@@ -1,5 +1,5 @@
 .principal__error {
-    background-color: #171810;
+    background-color: $colorFondoPrincipal;
     display: flex;
     justify-content: start;
     flex-direction: row;
@@ -30,7 +30,6 @@
         .texto__parrafo {
             color: grey;
             font-style: italic;
-            font-family: Montserrat;
 
             &:hover {
                 color: white;

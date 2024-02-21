@@ -1,5 +1,5 @@
 @media (max-width:900px) {
-    .principal {
+    .principal__cuerpoHabilidades {
         .habilidades__solapa {
             visibility: hidden;
             height: 0;
@@ -24,7 +24,7 @@
                     padding: 0;
 
                     .principal__solapa__listado {
-                        background-color: rgb(97, 97, 97);
+                        background-color: $colorFondoMiniSeccion;
                         display: flex;
                         flex-direction: column;
                         padding: 0.5rem 0.7rem;
@@ -33,7 +33,7 @@
                         margin-bottom: 3px;
 
                         &:hover {
-                            background-color: rgb(85, 84, 84);
+                            background-color: $colorFondoMiniMiniSeccion;
                         }
 
                         .principal__solapa__enlace {
@@ -78,7 +78,7 @@
 }
 
 @media (max-width:400px) {
-    .principal {
+    .principal__cuerpoHabilidades {
         .principal__habilidades {
             .principal__solapa__habilidades {
                 min-height: 345px;

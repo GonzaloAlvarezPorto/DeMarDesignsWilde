@@ -1,10 +1,15 @@
 *{
     @include niPaddingNiMargin(0, 0);
-    font-family: Mukta;
+    font-family: $textoGeneral;
     box-sizing:border-box;
 }
 
 html,body{
     background-color: black;
+    @include niPaddingNiMargin(0, 0);
+    min-height: 700px;
+}
+
+.principal{
     @include niPaddingNiMargin(0, 0);
 }
