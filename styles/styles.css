@@ -296,13 +296,13 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 }
 .principal__cuerpoHabilidades {
   background-color: #171810;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .principal__cuerpoHabilidades .habilidades__solapa {
   display: flex;
   flex-direction: row;
-  margin: 0 3rem 0 3rem;
-  padding-top: 2rem;
+  margin: 0 1rem;
+  padding-top: 1rem;
 }
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor {
   display: flex;
@@ -336,7 +336,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 3rem 0 3rem;
+  margin: 0 1rem;
   padding: 1rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -463,7 +463,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     padding: 0.5rem 0.7rem;
     border: solid 1px rgb(138, 138, 138);
     border-radius: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
   }
   .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado:hover {
     background-color: #7c7c7c;
@@ -493,6 +493,11 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     width: 50px;
   }
 }
+@media (max-width: 480px) {
+  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
+    width: 100%;
+  }
+}
 @media (max-width: 400px) {
   .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades {
     min-height: 345px;
@@ -503,16 +508,16 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   flex-direction: column;
   color: rgb(201, 201, 201);
   background-color: #171810;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 .principal__servicios .servicios__apartado {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 1rem;
   align-items: start;
   background-color: #363636;
-  margin: 2rem 3rem 0 3rem;
+  margin: 1rem 1rem 0 1rem;
   border-radius: 10px;
 }
 .principal__servicios .servicios__apartado .apartado__titulo {
@@ -533,7 +538,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   transition: 2s;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__descripcion {
-  padding: 0 2.8rem;
+  padding: 0 1.8rem;
   margin: 1rem 0 0 0;
   color: white;
   font-family: Montserrat;
@@ -542,7 +547,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   margin: 0;
   justify-content: center;
 }
@@ -569,36 +574,6 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__parrafo {
   width: 80%;
-}
-.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem 2rem;
-  margin: 0;
-  justify-content: space-between;
-}
-.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado .bloqueDescriptivo__item {
-  display: flex;
-  flex-direction: column;
-  padding: 0.8rem;
-  border: solid 1px rgb(20, 20, 20);
-  border-radius: 10px;
-  margin: 2px;
-  background-color: #7c7c7c;
-}
-.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado .bloqueDescriptivo__item:hover {
-  border-color: rgb(3, 250, 110);
-  background-color: #979797;
-  transition: 2s;
-}
-.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado .bloqueDescriptivo__item .item__titulo {
-  color: whitesmoke;
-  text-decoration: underline #979797;
-}
-.principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listado .bloqueDescriptivo__item .item__texto {
-  margin: 0;
-  color: white;
-  font-family: Montserrat;
 }
 
 @media (max-width: 1200px) {
@@ -633,7 +608,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   display: flex;
   justify-content: center;
   padding: 0.5rem;
-  background-color: #363636;
+  background-color: rgb(48, 48, 48);
 }
 .pieDePagina .pieDePagina__redes .redes__contenedores {
   margin: 0;
