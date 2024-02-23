@@ -297,38 +297,61 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__cuerpoHabilidades {
   background-color: #171810;
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .principal__cuerpoHabilidades .habilidades__solapa {
+  text-transform: uppercase;
   display: flex;
-  flex-direction: row;
-  margin: 0 1rem;
-  padding-top: 1rem;
+  align-items: start;
+  margin: 1rem;
+  width: 200px;
+  background-color: #363636;
+  margin-bottom: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.principal__cuerpoHabilidades .habilidades__solapa:hover {
+  display: flex;
+}
+.principal__cuerpoHabilidades .habilidades__solapa:hover .solapa__contenedor {
+  display: flex;
+  flex-direction: column;
+}
+.principal__cuerpoHabilidades .habilidades__solapa .solapa__etiqueta {
+  color: white;
+  padding: 1rem 2.2rem;
+}
+.principal__cuerpoHabilidades .habilidades__solapa .solapa__etiqueta .solapa__flecha {
+  width: 20px;
 }
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+  display: none;
+  position: absolute;
+  background-color: rgb(83, 83, 83);
+  z-index: 1;
+  margin: 0.8rem;
+  margin-top: 3.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 350px;
+  font-family: Montserrat;
 }
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor .solapa__listado {
-  background-color: #363636;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   padding: 0.5rem 0.7rem;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 20%;
   align-items: center;
-}
-.principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor .solapa__listado:hover {
-  background-color: rgb(83, 83, 83);
-  border-color: rgb(3, 250, 110);
-  transition: 2s;
+  margin: 0.1rem;
 }
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor .solapa__listado .solapa__enlace {
-  text-decoration: none;
+  text-transform: uppercase;
   color: white;
+  text-decoration: none;
+  display: flex;
+  margin: 0;
 }
 .principal__cuerpoHabilidades .principal__habilidades {
   background-color: #363636;
@@ -340,12 +363,8 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   padding: 1rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   min-height: 500px;
-}
-.principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades {
-  visibility: hidden;
-  height: 0;
-  width: 0;
 }
 .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor {
   display: flex;
@@ -434,47 +453,9 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 }
 
 @media (max-width: 900px) {
-  .principal__cuerpoHabilidades .habilidades__solapa {
-    visibility: hidden;
-    height: 0;
-  }
-  .principal__cuerpoHabilidades .principal__habilidades {
-    justify-content: space-between;
-    border-top-left-radius: 10px;
-  }
-  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 250px;
-    visibility: visible;
-    margin: 0.5rem;
-  }
-  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado {
-    background-color: rgb(83, 83, 83);
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem 0.7rem;
-    border: solid 1px rgb(138, 138, 138);
-    border-radius: 10px;
-    margin-bottom: 7px;
-  }
-  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado:hover {
-    background-color: #7c7c7c;
-  }
-  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades .principal__solapa__contenedor .principal__solapa__listado .principal__solapa__enlace {
-    text-decoration: none;
-    color: white;
-  }
   .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor {
     flex-direction: row;
-    align-items: center;
+    align-items: start;
   }
   .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
     height: 200px;
@@ -494,13 +475,8 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
 }
 @media (max-width: 480px) {
-  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
-    width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .principal__cuerpoHabilidades .principal__habilidades .principal__solapa__habilidades {
-    min-height: 345px;
+  .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor {
+    width: 265px;
   }
 }
 .principal__servicios {
@@ -524,6 +500,8 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   margin: 0 32px 0 0;
   padding: 1rem;
   width: 20%;
+  font-size: 20px;
+  text-align: center;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo {
   background-color: rgb(83, 83, 83);
@@ -542,6 +520,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   margin: 1rem 0 0 0;
   color: white;
   font-family: Montserrat;
+  font-size: 12px;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera {
   display: flex;
@@ -560,6 +539,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   margin: 2px;
   background-color: #7c7c7c;
   align-items: center;
+  font-size: 14px;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera:hover {
   border-color: rgb(3, 250, 110);
@@ -569,11 +549,11 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__titulo {
   font-weight: bold;
   color: black;
-  width: 20%;
-  margin-right: 10px;
+  width: 15%;
+  margin-right: 30px;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__parrafo {
-  width: 80%;
+  width: 85%;
 }
 
 @media (max-width: 1200px) {
@@ -599,9 +579,11 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     width: auto;
     text-align: center;
     margin-bottom: 10px;
+    margin-right: 0;
   }
   .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__parrafo {
     width: auto;
+    text-align: center;
   }
 }
 .pieDePagina .pieDePagina__redes {

@@ -1,52 +1,9 @@
 @media (max-width:900px) {
     .principal__cuerpoHabilidades {
-        .habilidades__solapa {
-            visibility: hidden;
-            height: 0;
-        }
-
         .principal__habilidades {
-            justify-content: space-between;
-            border-top-left-radius: 10px;
-
-            .principal__solapa__habilidades {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                min-height: 250px;
-                visibility: visible;
-                margin: 0.5rem;
-
-                .principal__solapa__contenedor {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 0;
-                    padding: 0;
-
-                    .principal__solapa__listado {
-                        background-color: $colorFondoMiniSeccion;
-                        display: flex;
-                        flex-direction: column;
-                        padding: 0.5rem 0.7rem;
-                        border: solid 1px rgb(138, 138, 138);
-                        border-radius: 10px;
-                        margin-bottom: 7px;
-
-                        &:hover {
-                            background-color: $colorFondoMiniMiniSeccion;
-                        }
-
-                        .principal__solapa__enlace {
-                            text-decoration: none;
-                            color: white;
-                        }
-                    }
-                }
-            }
-
             .contenedor__habilidades__contenedor {
                 flex-direction: row;
-                align-items: center;
+                align-items: start;
 
                 .habilidades__contenedor {
                     height: 200px;
@@ -79,21 +36,9 @@
 
 @media (max-width:480px) {
     .principal__cuerpoHabilidades {
-        .principal__habilidades {
-            .contenedor__habilidades__contenedor {
-                .habilidades__contenedor {
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width:400px) {
-    .principal__cuerpoHabilidades {
-        .principal__habilidades {
-            .principal__solapa__habilidades {
-                min-height: 345px;
+        .habilidades__solapa {
+            .solapa__contenedor {
+                width: 265px;
             }
         }
     }
