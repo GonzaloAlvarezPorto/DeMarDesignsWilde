@@ -319,11 +319,20 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   flex-direction: column;
 }
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__etiqueta {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+  height: 50px;
+  justify-content: space-around;
+}
+.principal__cuerpoHabilidades .habilidades__solapa .solapa__etiqueta .solapa__texto {
   color: white;
-  padding: 1rem 2.2rem;
+  margin: 0;
 }
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__etiqueta .solapa__flecha {
-  width: 20px;
+  height: 20px;
 }
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor {
   display: none;
@@ -331,7 +340,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   background-color: rgb(83, 83, 83);
   z-index: 1;
   margin: 0.8rem;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
   padding: 0.5rem;
   border-radius: 10px;
   border: 1px solid black;

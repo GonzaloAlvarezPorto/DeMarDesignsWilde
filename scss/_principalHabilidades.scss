@@ -15,22 +15,32 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
 
-        
+
         &:hover {
             display: flex;
-            
+
             .solapa__contenedor {
                 display: flex;
                 flex-direction: column;
             }
         }
-        
+
         .solapa__etiqueta {
-            color: white;
-            padding: 1rem 2.2rem;
-            
-            .solapa__flecha{
-                width: 20px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 1rem;
+            align-items: center;
+            height: 50px;
+            justify-content: space-around;
+
+            .solapa__texto {
+                color: white;
+                margin: 0;
+            }
+
+            .solapa__flecha {
+                height: 20px;
             }
 
         }
@@ -41,7 +51,7 @@
             background-color: $colorFondoMiniSeccion;
             z-index: 1;
             margin: 0.8rem;
-            margin-top: 3.5rem;
+            margin-top: 3rem;
             padding: 0.5rem;
             border-radius: 10px;
             border: 1px solid black;
