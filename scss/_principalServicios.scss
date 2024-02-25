@@ -65,7 +65,7 @@
 
                     &:hover {
                         border-color: $colorVerdeDeMar;
-                        background-color: $colorFondoMiniMiniMiniSeccion;
+                        background-color: $colorFondoMiniMiniSeccionHover;
                         transition: 2s;
                     }
 
@@ -81,8 +81,6 @@
                     }
                 }
             }
-
-
         }
     }
 }

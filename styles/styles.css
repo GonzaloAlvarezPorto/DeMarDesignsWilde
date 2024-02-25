@@ -122,7 +122,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
 }
 .principal__cuerpo {
-  background-color: #0d0e09;
+  background-color: rgb(11, 11, 11);
   display: flex;
   justify-content: start;
   padding: 2rem 1rem 0 1rem;
@@ -210,7 +210,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
 }
 .principal__error {
-  background-color: #0d0e09;
+  background-color: rgb(11, 11, 11);
   display: flex;
   justify-content: start;
   flex-direction: row;
@@ -295,7 +295,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
 }
 .principal__cuerpoHabilidades {
-  background-color: #0d0e09;
+  background-color: rgb(11, 11, 11);
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -306,7 +306,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   align-items: start;
   margin: 1rem;
   width: 200px;
-  background-color: #2e2e2e;
+  background-color: rgb(33, 33, 33);
   margin-bottom: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -337,7 +337,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor {
   display: none;
   position: absolute;
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(55, 55, 55);
   z-index: 1;
   margin: 0.8rem;
   margin-top: 3rem;
@@ -355,6 +355,9 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   align-items: center;
   margin: 0.1rem;
 }
+.principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor .solapa__listado:hover {
+  background-color: rgb(66, 66, 66);
+}
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor .solapa__listado .solapa__enlace {
   text-transform: uppercase;
   color: white;
@@ -364,12 +367,12 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 }
 .principal__cuerpoHabilidades .contenedor__habilidades {
   margin: 0 1rem;
-  background-color: #2e2e2e;
+  background-color: rgb(33, 33, 33);
   border-radius: 10px;
   border-top-left-radius: 0;
 }
 .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades {
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(55, 55, 55);
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -378,6 +381,11 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   padding: 1rem;
   border: solid 1px rgb(20, 20, 20);
   border-radius: 10px;
+}
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades:hover {
+  background-color: rgb(66, 66, 66);
+  transition: 2s;
+  border-color: rgb(3, 250, 110);
 }
 .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .habilidades__inicio {
   display: flex;
@@ -412,13 +420,13 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   align-items: center;
   flex-wrap: wrap;
   margin: 0.5rem;
-  background-color: #636363;
+  background-color: rgb(77, 77, 77);
   border-radius: 10px;
   width: 400px;
   height: 200px;
 }
 .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor:hover {
-  background-color: #6b6b6b;
+  background-color: rgb(88, 88, 88);
   transition: 2s;
   border-color: rgb(3, 250, 110);
 }
@@ -514,7 +522,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   display: flex;
   flex-direction: column;
   color: rgb(201, 201, 201);
-  background-color: #0d0e09;
+  background-color: rgb(11, 11, 11);
   padding-bottom: 1rem;
 }
 .principal__servicios .servicios__apartado {
@@ -523,7 +531,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   justify-content: space-evenly;
   padding: 1rem;
   align-items: start;
-  background-color: #2e2e2e;
+  background-color: rgb(33, 33, 33);
   margin: 1rem 1rem 0 1rem;
   border-radius: 10px;
 }
@@ -535,7 +543,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   text-align: center;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo {
-  background-color: rgb(66, 66, 66);
+  background-color: rgb(55, 55, 55);
   display: flex;
   flex-direction: column;
   border: solid 1px rgb(20, 20, 20);
@@ -568,13 +576,13 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   border: solid 1px rgb(20, 20, 20);
   border-radius: 10px;
   margin: 2px;
-  background-color: #636363;
+  background-color: rgb(77, 77, 77);
   align-items: center;
   font-size: 14px;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera:hover {
   border-color: rgb(3, 250, 110);
-  background-color: #6b6b6b;
+  background-color: rgb(88, 88, 88);
   transition: 2s;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__titulo {

@@ -57,6 +57,8 @@
             width: 350px;
             font-family: Montserrat;
 
+            
+
             .solapa__listado {
                 border-radius: 10px;
                 display: flex;
@@ -64,6 +66,10 @@
                 padding: 0.5rem 0.7rem;
                 align-items: center;
                 margin: 0.1rem;
+                
+                &:hover{
+                    background-color: $colorFondoMiniSeccionHover;
+                }
 
                 .solapa__enlace {
                     text-transform: uppercase;
@@ -92,6 +98,12 @@
             padding: 1rem;
             border: solid 1px rgb(20, 20, 20);
             border-radius: 10px;
+
+            &:hover {
+                background-color: $colorFondoMiniSeccionHover;
+                transition: 2s;
+                border-color: $colorVerdeDeMar;
+            }
 
             .habilidades__inicio {
                 display: flex;
@@ -136,7 +148,7 @@
                     height: 200px;
 
                     &:hover {
-                        background-color: $colorFondoMiniMiniMiniSeccion;
+                        background-color: $colorFondoMiniMiniSeccionHover;
                         transition: 2s;
                         border-color: $colorVerdeDeMar;
                     }
