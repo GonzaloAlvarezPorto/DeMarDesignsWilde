@@ -122,7 +122,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
 }
 .principal__cuerpo {
-  background-color: #171810;
+  background-color: #0d0e09;
   display: flex;
   justify-content: start;
   padding: 2rem 1rem 0 1rem;
@@ -210,7 +210,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
 }
 .principal__error {
-  background-color: #171810;
+  background-color: #0d0e09;
   display: flex;
   justify-content: start;
   flex-direction: row;
@@ -295,7 +295,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   }
 }
 .principal__cuerpoHabilidades {
-  background-color: #171810;
+  background-color: #0d0e09;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -306,7 +306,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   align-items: start;
   margin: 1rem;
   width: 200px;
-  background-color: #363636;
+  background-color: #2e2e2e;
   margin-bottom: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -337,7 +337,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .principal__cuerpoHabilidades .habilidades__solapa .solapa__contenedor {
   display: none;
   position: absolute;
-  background-color: rgb(83, 83, 83);
+  background-color: rgb(66, 66, 66);
   z-index: 1;
   margin: 0.8rem;
   margin-top: 3rem;
@@ -362,27 +362,49 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   display: flex;
   margin: 0;
 }
-.principal__cuerpoHabilidades .principal__habilidades {
-  background-color: #363636;
+.principal__cuerpoHabilidades .contenedor__habilidades {
+  margin: 0 1rem;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+}
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades {
+  background-color: rgb(66, 66, 66);
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
   padding: 1rem;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  min-height: 500px;
+  border: solid 1px rgb(20, 20, 20);
+  border-radius: 10px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .habilidades__inicio {
+  display: flex;
+  flex-direction: row;
+}
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .habilidades__inicio .inicio__enlace {
+  text-decoration: none;
+  color: white;
+  padding: 0 1rem;
+}
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .habilidades__inicio .inicio__enlace .inicio__flecha {
+  width: 20px;
+}
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .habilidades__titulo {
+  color: white;
+  padding: 0 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor {
   display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
   display: flex;
   border: solid 1px rgb(20, 20, 20);
   flex-direction: row;
@@ -390,17 +412,17 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   align-items: center;
   flex-wrap: wrap;
   margin: 0.5rem;
-  background-color: rgb(83, 83, 83);
+  background-color: #636363;
   border-radius: 10px;
   width: 400px;
   height: 200px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor:hover {
-  background-color: #7c7c7c;
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor:hover {
+  background-color: #6b6b6b;
   transition: 2s;
   border-color: rgb(3, 250, 110);
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -408,28 +430,28 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   padding: 0.5rem;
   height: 200px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
   width: 100px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 5px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto .habilidades__texto {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__texto .habilidades__texto {
   color: white;
   align-items: center;
   margin: 0;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
   padding: 0.5rem;
   color: rgb(146, 146, 146);
   display: flex;
@@ -437,16 +459,16 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   justify-content: center;
   height: 200px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
   width: 120px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -455,31 +477,31 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   color: white;
   width: 170px;
 }
-.principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion .texto__aclaracion {
+.principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__aclaracion .texto__aclaracion {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
 @media (max-width: 900px) {
-  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor {
+  .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor {
     flex-direction: row;
     align-items: start;
   }
-  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
+  .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor {
     height: 200px;
     width: 176px;
   }
-  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
+  .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills {
     height: 100px;
   }
-  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
+  .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__skills .contenedor__imagen .habilidades__imagen {
     width: 50px;
   }
-  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
+  .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel {
     height: 100px;
   }
-  .principal__cuerpoHabilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
+  .principal__cuerpoHabilidades .contenedor__habilidades .principal__habilidades .contenedor__habilidades__contenedor .habilidades__contenedor .contenedor__nivel .nivel__estado .nivel__imagen {
     width: 50px;
   }
 }
@@ -492,7 +514,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   display: flex;
   flex-direction: column;
   color: rgb(201, 201, 201);
-  background-color: #171810;
+  background-color: #0d0e09;
   padding-bottom: 1rem;
 }
 .principal__servicios .servicios__apartado {
@@ -501,7 +523,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   justify-content: space-evenly;
   padding: 1rem;
   align-items: start;
-  background-color: #363636;
+  background-color: #2e2e2e;
   margin: 1rem 1rem 0 1rem;
   border-radius: 10px;
 }
@@ -513,7 +535,7 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   text-align: center;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo {
-  background-color: rgb(83, 83, 83);
+  background-color: rgb(66, 66, 66);
   display: flex;
   flex-direction: column;
   border: solid 1px rgb(20, 20, 20);
@@ -546,13 +568,13 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
   border: solid 1px rgb(20, 20, 20);
   border-radius: 10px;
   margin: 2px;
-  background-color: #7c7c7c;
+  background-color: #636363;
   align-items: center;
   font-size: 14px;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera:hover {
   border-color: rgb(3, 250, 110);
-  background-color: #979797;
+  background-color: #6b6b6b;
   transition: 2s;
 }
 .principal__servicios .servicios__apartado .apartado__bloqueDescriptivo .bloqueDescriptivo__listadoCabecera .bloqueDescriptivo__itemCabecera .itemCabecera__titulo {
@@ -608,12 +630,12 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace:hover {
   color: white;
 }
-.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .enlace__imagen, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .instagram, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .whatsapp, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .linkedin, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .facebook {
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .enlace__imagen, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .gmail, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .instagram, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .whatsapp, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .linkedin, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .facebook {
   height: 40px;
   border: 1px solid rgb(48, 48, 48);
   border-radius: 100px;
 }
-.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .enlace__imagen:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .instagram:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .whatsapp:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .linkedin:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .facebook:hover {
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .enlace__imagen:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .gmail:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .instagram:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .whatsapp:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .linkedin:hover, .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .facebook:hover {
   transition: 1s;
 }
 .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .facebook:hover {
@@ -631,6 +653,10 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
 .pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .instagram:hover {
   border: 1px solid rgb(192, 42, 160);
   background-color: rgb(192, 42, 160);
+}
+.pieDePagina .pieDePagina__redes .redes__contenedores .contenedores__enlace .gmail:hover {
+  border: 1px solid rgb(255, 72, 0);
+  background-color: rgb(255, 72, 0);
 }
 .pieDePagina .pieDePagina__derechos {
   background-color: black;
