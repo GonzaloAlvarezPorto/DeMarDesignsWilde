@@ -1,0 +1,86 @@
+.principal__proyectos {
+    background-color: $colorFondoPrincipal;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: rgb(201, 201, 201);
+
+    .proyectos__general {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: $colorFondoSeccion;
+        border-radius: 10px;
+        margin: 1rem 1rem 0 1rem;
+        padding-bottom: 1rem;
+        
+        .proyectos__contenedor {
+            background-color: $colorFondoMiniSeccion;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            border-radius: 10px;
+            border: solid 1px rgb(20, 20, 20);
+            padding: 1rem;
+            align-items: center;
+            margin: 1rem 1rem 0 1rem;
+
+            &:hover {
+                background-color: $colorFondoMiniSeccionHover;
+                transition: 2s;
+                border-color: $colorVerdeDeMar;
+            }
+
+            .contenedor__tituloProyecto {
+                color: white;
+                width: 20%;
+                padding: 0 1rem;
+                font-family: Montserrat;
+                text-shadow: 1px 1px 10px black;
+            }
+
+            .contenedor__descripciónProyecto {
+                color: rgb(201, 201, 201);
+                width: 30%;
+                padding: 0 1rem;
+                font-style: italic;
+                text-align: center;
+                border-left: 1px solid black;
+            }
+
+            .contenedor__imagenesProyecto {
+                width: 50%;
+                padding: 0 1rem 1rem 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: $colorFondoMiniMiniSeccion;
+                border-radius: 10px;
+                border: 1px solid black;
+                
+                &:hover {
+                    background-color: $colorFondoMiniMiniSeccionHover;
+                    transition: 2s;
+                    border-color: $colorVerdeDeMar;
+                }
+                
+                .imagenesProyecto__logo{
+                    .imagenesProyecto__logoImagen{
+                        margin: 1rem 1rem 0 1rem;
+                    }
+                }
+
+                .imagenesProyecto__enlace{
+                    .imagenesProyecto__imagen{
+                        width: 400px;
+                        margin: 1rem 1rem 0 1rem;
+                        border-radius: 5px;
+                        border: 1px solid grey;
+                        box-shadow: 1px 1px 30px black;
+                    }
+                }
+            }
+        }
+    }
+}

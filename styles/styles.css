@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -209,91 +210,80 @@ header .encabezado .encabezado__menu .menu__listado .listado__items .items__enla
     font-size: 12px;
   }
 }
-.principal__error {
+.principal__proyectos {
   background-color: rgb(11, 11, 11);
+  padding-bottom: 1rem;
   display: flex;
-  justify-content: start;
+  flex-direction: column;
+  color: rgb(201, 201, 201);
+}
+.principal__proyectos .proyectos__general {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: rgb(33, 33, 33);
+  border-radius: 10px;
+  margin: 1rem 1rem 0 1rem;
+  padding-bottom: 1rem;
+}
+.principal__proyectos .proyectos__general .proyectos__contenedor {
+  background-color: rgb(55, 55, 55);
+  display: flex;
+  justify-content: space-around;
   flex-direction: row;
-  padding: 3rem;
-  min-height: 440px;
-}
-.principal__error .error__imagen {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 2rem;
+  border-radius: 10px;
+  border: solid 1px rgb(20, 20, 20);
+  padding: 1rem;
   align-items: center;
+  margin: 1rem 1rem 0 1rem;
 }
-.principal__error .error__imagen .imagen__archivo {
-  height: 150px;
+.principal__proyectos .proyectos__general .proyectos__contenedor:hover {
+  background-color: rgb(66, 66, 66);
+  transition: 2s;
+  border-color: rgb(3, 250, 110);
 }
-.principal__error .error__texto {
-  width: 50%;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.principal__error .error__texto .texto__parrafo {
-  color: grey;
-  font-style: italic;
-}
-.principal__error .error__texto .texto__parrafo:hover {
+.principal__proyectos .proyectos__general .proyectos__contenedor .contenedor__tituloProyecto {
   color: white;
-  transition: 1s;
+  width: 20%;
+  padding: 0 1rem;
+  font-family: Montserrat;
+  text-shadow: 1px 1px 10px black;
+}
+.principal__proyectos .proyectos__general .proyectos__contenedor .contenedor__descripciónProyecto {
+  color: rgb(201, 201, 201);
+  width: 30%;
+  padding: 0 1rem;
+  font-style: italic;
+  text-align: center;
+  border-left: 1px solid black;
+}
+.principal__proyectos .proyectos__general .proyectos__contenedor .contenedor__imagenesProyecto {
+  width: 50%;
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(77, 77, 77);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.principal__proyectos .proyectos__general .proyectos__contenedor .contenedor__imagenesProyecto:hover {
+  background-color: rgb(88, 88, 88);
+  transition: 2s;
+  border-color: rgb(3, 250, 110);
+}
+.principal__proyectos .proyectos__general .proyectos__contenedor .contenedor__imagenesProyecto .imagenesProyecto__logo .imagenesProyecto__logoImagen {
+  margin: 1rem 1rem 0 1rem;
+}
+.principal__proyectos .proyectos__general .proyectos__contenedor .contenedor__imagenesProyecto .imagenesProyecto__enlace .imagenesProyecto__imagen {
+  width: 400px;
+  margin: 1rem 1rem 0 1rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 30px black;
 }
 
-@media (max-width: 780px) {
-  .principal .principal__error {
-    padding: 1rem;
-  }
-  .principal .principal__error .error__imagen {
-    width: 35%;
-    padding: 0;
-  }
-  .principal .principal__error .error__texto {
-    width: 65%;
-  }
-}
-@media (max-width: 575px) {
-  .principal .principal__error {
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .principal .principal__error .error__imagen {
-    margin-top: 0;
-    width: 100%;
-    padding: 1rem;
-  }
-  .principal .principal__error .error__imagen .imagen__archivo {
-    height: 150px;
-  }
-  .principal .principal__error .error__texto {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 1.5rem;
-  }
-  .principal .principal__error .error__texto .texto__parrafo {
-    width: 100%;
-    font-size: 14px;
-  }
-}
-@media (max-width: 375px) {
-  .principal .principal__error .error__imagen .imagen__archivo {
-    height: 120px;
-  }
-  .principal .principal__error .error__texto .texto__parrafo {
-    width: 100%;
-    font-size: 12px;
-  }
-}
 .principal__cuerpoHabilidades {
   background-color: rgb(11, 11, 11);
   padding-bottom: 1rem;
