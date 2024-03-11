@@ -55,61 +55,63 @@
     <main>
         <div class="principal">
             <div class="principal__proyectos">
+                <button id="prevBtn" onclick="cambiarFotoProyecto(-1)"><</button>
                 <div class="proyectos__general">
                     <div class="proyectos__contenedor">
                         <div class="contenedor__tituloProyecto">
                             Página web estática de Vinoteca Roberto.
                         </div>
-                        <div class="contenedor__descripciónProyecto">
+                        <div class="contenedor__descripcionProyecto">
                             Página de prueba. Esta página fue desarrollada como proyecto final de carrera.
                         </div>
                         <div class="contenedor__imagenesProyecto">
-                            <a class="imagenesProyecto__logo" href="https://gonzaloalvarezporto.github.io/vr_vinos/"
-                                target="_blank" title="vrvinos">
-                                <img class="imagenesProyecto__logoImagen" src="../media/images/logo2.png" alt="">
-                            </a>
-                            <a class="imagenesProyecto__enlace"
-                                href="https://gonzaloalvarezporto.github.io/vr_vinos/pages/catalogo.html"
-                                target="_blank" title="vrvinos">
-                                <img class="imagenesProyecto__imagen"
-                                    src="../media/images/miniatura_VrVinos_catalogo.png" alt="">
-                            </a>
-                            <a class="imagenesProyecto__enlace" href="https://gonzaloalvarezporto.github.io/vr_vinos/"
-                                target="_blank" title="vrvinos">
-                                <img class="imagenesProyecto__imagen"
-                                    src="../media/images/miniatura_VrVinos_proveedores.png" alt="vrvinos" title="vrvinos">
-                            </a>
+                            <div class="contenedor__logoDeCadaProyecto">
+                                <a class="imagenesProyecto__logo" href="https://gonzaloalvarezporto.github.io/vr_vinos/"
+                                    target="_blank" title="vrvinos">
+                                    <img class="imagenesProyecto__logoImagen" src="../media/images/logo2.png" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="proyectos__contenedor">
                         <div class="contenedor__tituloProyecto">
                             Página web estática de Pizzería Don Rémolo.
                         </div>
-                        <div class="contenedor__descripciónProyecto">
+                        <div class="contenedor__descripcionProyecto">
                             Página de prueba. Esta página fue desarrollada como parte de una práctica de ID for Ideas.
                         </div>
                         <div class="contenedor__imagenesProyecto">
-                            <a class="imagenesProyecto__logo" href="https://gonzaloalvarezporto.github.io/pizzeriaDonRemolo/"
-                                target="_blank" title="donremolo">
-                                <img class="imagenesProyecto__logoImagen" src="../media/images/logo2donremolo.png" alt="donremolo" title="donremolo">
-                            </a>
+                            <div class="contenedor__logoDeCadaProyecto">
+                                <a class="imagenesProyecto__logo"
+                                    href="https://gonzaloalvarezporto.github.io/pizzeriaDonRemolo/" target="_blank"
+                                    title="donremolo">
+                                    <img class="imagenesProyecto__logoImagen" src="../media/images/logo2donremolo.png"
+                                        alt="donremolo" title="donremolo">
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="proyectos__contenedor">
                         <div class="contenedor__tituloProyecto">
                             Proyecto de página web + eCommerce de Almacén Paykuna
                         </div>
-                        <div class="contenedor__descripciónProyecto">
+                        <div class="contenedor__descripcionProyecto">
                             Página en desarrollo. Esta página forma parte de un proyecto de fin de curso de JavaScript.
                         </div>
                         <div class="contenedor__imagenesProyecto">
-                            <a class="imagenesProyecto__logo" href="https://gonzaloalvarezporto.github.io/paykunaTienda/"
-                                target="_blank" title="paykuna">
-                                <img class="imagenesProyecto__logoImagen" src="../media/images/paykuna.png" alt="paykuna" title="paykuna">
-                            </a>
+                            <div class="contenedor__logoDeCadaProyecto">
+                                <a class="imagenesProyecto__logo"
+                                    href="https://gonzaloalvarezporto.github.io/paykunaTienda/" target="_blank"
+                                    title="paykuna">
+                                    <img class="imagenesProyecto__logoImagen" src="../media/images/paykuna.png"
+                                        alt="paykuna" title="paykuna">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
+                <button id="nextBtn" onclick="cambiarFotoProyecto(1)">></button>
             </div>
         </div>
     </main>
